@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格标签</title>
+    <link rel="stylesheet" type="text/css" href="table.css" />
+</head>
+
+<body>
+    <!-- cellpadding 文字与单元格间距离 -->
+    <!-- cellspacing 单元格与单元格间距离 -->
+    <table align="center" cellpadding="0" cellspacing="0">
+
+        <thead>
+            <th>排名</th>
+            <th>关键词</th>
+            <th>趋势</th>
+            <th>进入搜索</th>
+            <th>最近七日</th>
+            <th>相关链接</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>斗罗大陆</td>
+                <td><img src="images/up.png" height="15px"></td>
+                <td>324454</td>
+                <td>123</td>
+                <td><a href="#">贴吧 </a><a href="#">图片 </a><a href="#">百科 </a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>绝世唐门</td>
+                <td><img src="images/down.png" height="15px"></td>
+                <td>124434</td>
+                <td>452</td>
+                <td><a href="#">贴吧 </a><a href="#">图片 </a><a href="#"> 百科</a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>龙王传说</td>
+                <td><img src="images/up.png" height="15px"></td>
+                <td>354512</td>
+                <td>523</td>
+                <td><a href="#">贴吧 </a><a href="#">图片 </a><a href="#"> 百科</a></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>终极斗罗</td>
+                <td><img src="images/down.png" height="15px"></td>
+                <td>15723</td>
+                <td>571</td>
+                <td><a href="#">贴吧 </a><a href="#"> 图片</a><a href="#"> 百科</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- 合并单元格
+    跨行合并 rowspan="合并单元格个数" 放在目标单元格位置
+    跨列合并 colspan="合并单元格个数" 放在目标单元格位置
+    删除多余单元格 -->
+    <table align="left" border="1" cellpadding="0" cellspacing="0" width="500" height="249">
+        <tr>
+            <td colspan="3" align="center">合并单元格</td>
+        </tr>
+        <tr>
+            <td> </td>
+            <td colspan="2"></td> 
+        </tr>
+        <tr>
+            <td rowspan="2"></td>
+            <td></td>
+            <td></td>    
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+
+</html>
